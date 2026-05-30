@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, serif;
+    background-color: #020303;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 0 30px 0;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+.logo-txt {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 59px;
+    vertical-align: middle;
+}
+
+.menu {
+    margin-left: 281px;
+    font-size: 16px;
+    color: rgb(253, 239, 213);
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.menu-items {
+    display: inline-block;
+    margin-right: 59px;
+}
+
+.menu-items:hover {
+    color: rgb(255, 175, 24);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sushi {
+    background: url(../images/rolls.png) no-repeat bottom right;
+    padding: 123px 0 125px 0;
+}
+
+.sushi-title {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.222;
+    max-width: 573px;
+}
+
+.orange {
+    color: rgb(255, 175, 24);
+}
+
+.feature {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    margin-top: 81px;
+}
+
+.feature img {
+    vertical-align: middle;
+}
+
+.feature-items {
+    margin-right: 99px;
+}
+
+.feature-text {
+    margin-left: 10px;
+}
+
+.button {
+    width: 224px;
+    background-color: #ffaf18;
+    border: 0;
+    font-size: 16px;
+    color: rgb(2, 3, 3);
+    font-weight: bold;
+    /*     line-height: 3.438; */
+    padding: 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 96px;
+}
+
+.button:hover {
+    box-shadow: 0 10px 40px -10px #ffaf18;
+}
+
+.catalog {
+    padding: 120px 0 120px 0;
+}
+
+.catalog-title {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.571;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.product-catalog-item {
+    background-color: #fff;
+    display: inline-block;
+    height: 344px;
+    width: 272px;
+    text-align: center;
+    padding: 10px 0 15px 0;
+    margin: 5px;
+    border: 5px solid #fff;
+}
+
+.product-catalog-item:last-child,
+.product-catalog-item:nth-child(4) {
+    margin-right: 0;
+}
+
+.product-catalog-item:first-child,
+.product-catalog-item:nth-child(5) {
+    margin-left: 0;
+}
+
+.product-catalog-item.orange-border {
+    border: 5px solid #ffaf18;
+}
+
+.product-catalog-item:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+.item-title {
+    font-size: 18px;
+    color: rgb(24, 26, 26);
+    font-weight: bold;
+    margin: 30px 0 17px 0;
+}
+
+.item-description {
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    height: 53px;
+    width: 242px;
+    margin: 0 auto;
+}
+
+.korzina {
+    width: 242px;
+    background-color: #ffaf18;
+    border: 0;
+    padding: 17px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.korzina a {
+    font-size: 16px;
+    color: rgb(2, 3, 3);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.korzina:hover {
+    box-shadow: 0 10px 40px -10px #ffaf18;
+}
+
+.ivan {
+    background: url(../images/povar-4x.png) no-repeat bottom right;
+    padding: 120px 0 67px 0;
+}
+
+.ivan-title {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.286;
+    width: 386px;
+    margin-bottom: 72px;
+}
+
+.about-ivan {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  width: 384px;
+  margin-bottom: 100px;
+}
+
+.read {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.4;
+  width: 385px;
+  margin-bottom: 40px;
+}
+
+.link-to-read.middle-link {
+    margin: 0 40px 0 40px;
+}
+
+.icon-image {
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.icon-image:hover {
+    box-shadow: 0 0 15px #fff;
+}
+
+.footer {
+    padding: 30px 0 30px 0;
+}
+
+.rights {
+  font-size: 12px;
+  color: rgb(44, 44, 44);
+  margin-left: 390px;
+}
