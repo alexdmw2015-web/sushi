@@ -33,26 +33,44 @@ body {
 
 .menu {
     margin-left: 281px;
-    font-size: 16px;
-    color: rgb(253, 239, 213);
-    line-height: 1.2;
     display: inline-block;
 }
 
 .menu-items {
     display: inline-block;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: rgb(253, 239, 213);
+    padding-bottom: 6px;
     margin-right: 59px;
 }
 
 .menu-items:hover {
     color: rgb(255, 175, 24);
-    text-decoration: underline;
-    cursor: pointer;
+    border-color: rgb(255, 175, 24);
+}
+
+.menu-items a:hover {
+    line-height: 1.2;
+    color: rgb(255, 175, 24);
 }
 
 .sushi {
-    background: url(../images/rolls.png) no-repeat bottom right;
     padding: 123px 0 125px 0;
+}
+
+.sushi-info,
+.sushi-image {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.sushi-image {
+    margin-bottom: -42px;
+}
+
+.sushi.container {
+    font-size: 0;
 }
 
 .sushi-title {
@@ -60,7 +78,7 @@ body {
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.222;
-    max-width: 573px;
+    max-width: 564px;
 }
 
 .orange {
@@ -70,7 +88,6 @@ body {
 .feature {
     font-size: 16px;
     color: rgb(255, 255, 255);
-    line-height: 1.5;
     margin-top: 81px;
 }
 
@@ -78,8 +95,8 @@ body {
     vertical-align: middle;
 }
 
-.feature-items {
-    margin-right: 99px;
+.feature-items.second-feature {
+    margin-left: 99px;
 }
 
 .feature-text {
@@ -105,32 +122,35 @@ body {
 
 .catalog {
     padding: 120px 0 120px 0;
-    font-size: 0;
 }
 
 .catalog-title {
     font-size: 35px;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    line-height: 1.571;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
+}
+
+.product-catalog {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+    margin-left: -12px;
+    margin-right: -12px;
 }
 
 .product-catalog-item {
     background-color: #fff;
     display: inline-block;
-    height: 344px;
-    width: 272px;
+    max-height: 354px;
+    max-width: 282px;
     text-align: center;
-    padding: 10px 0 15px 0;
+    padding: 5px 15px 12px 15px;
     margin: 12px;
     border: 5px solid #fff;
-}
-
-.product-catalog {
-    margin-left: -12px;
-    margin-right: -12px;
+    box-sizing: border-box;
+    vertical-align: top;
 }
 
 .product-catalog-item.orange-border {
@@ -138,49 +158,52 @@ body {
 }
 
 .product-catalog-item:hover {
-    box-shadow: 0 0 10px 20px #fff;
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.373);
 }
 
 .item-title {
     font-size: 18px;
     color: rgb(24, 26, 26);
     font-weight: bold;
-    margin: 30px 0 17px 0;
+    margin: 30px 0 15px 0;
+    vertical-align: bottom;
 }
 
 .item-description {
     font-size: 14px;
     color: rgb(24, 26, 26);
     line-height: 1.286;
-    height: 53px;
-    width: 242px;
     margin: 0 auto;
 }
 
 .korzina {
-    width: 242px;
-    background-color: #ffaf18;
-    border: 0;
-    padding: 17px;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-.korzina a {
+    display: inline-block;
     font-size: 16px;
     color: rgb(2, 3, 3);
     font-weight: bold;
     text-decoration: none;
+    width: 242px;
+    background-color: #ffaf18;
+    border-radius: 25px;
+    border: 0;
+    padding: 17px 0;
+    margin-top: 15px;
 }
+
+
 
 .korzina:hover {
     box-shadow: 0 10px 40px -10px #ffaf18;
 }
 
 .ivan {
-    background: url(../images/povar-4x.png) no-repeat bottom right;
     padding: 120px 0 67px 0;
+}
+
+.ivan-text,
+.ivan-image {
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .ivan-title {
@@ -193,41 +216,66 @@ body {
 }
 
 .about-ivan {
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  line-height: 1.5;
-  width: 384px;
-  margin-bottom: 100px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    width: 384px;
+    margin-bottom: 100px;
 }
 
 .read {
-  font-size: 25px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.4;
-  width: 385px;
-  margin-bottom: 40px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.4;
+    width: 385px;
+    margin-bottom: 40px;
+}
+
+.link-to-read {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/onigiri.png) white center no-repeat;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.link-to-read.first-link {
+    background: url(../images/onigiri.png) white center no-repeat;
 }
 
 .link-to-read.middle-link {
+    background: url(../images/sushi-read.png) white center no-repeat;
     margin: 0 40px 0 40px;
 }
 
-.icon-image {
-    border-radius: 50%;
-    vertical-align: top;
+.link-to-read.last-link {
+    background: url(../images/tuna-read.png) white center no-repeat;
 }
 
-.icon-image:hover {
-    box-shadow: 0 0 15px #fff;
+.link-to-read:hover {
+    box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 0.5);
 }
+
+.link-to-read:visited {
+    background-color: #bebebe;
+}
+
+.link-to-read:active {
+    background-color: #ffaf18;
+}
+
 
 .footer {
     padding: 30px 0 30px 0;
+    background-color: black;
 }
 
 .rights {
-  font-size: 12px;
-  color: rgb(44, 44, 44);
-  margin-left: 390px;
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+    margin-left: 390px;
 }
